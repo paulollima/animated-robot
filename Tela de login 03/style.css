@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#7754db ;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.login{
+    background-color:#420bdbb6 ;
+    border-radius: 10px;
+    width: 400px;
+    padding: 50px;
+}
+
+.login h2{
+    text-align: center;
+   margin-bottom: 40px;
+   font-size: 2rem;
+   color: white;
+}
+
+.login .user{
+    position: relative;
+}
+
+.login .user input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 3px solid white;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.login .user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login .user input:focus ~ label,
+.login .user input:valid ~ label
+{
+    top: -20px;
+    left: 0;
+    color:#6190DB ;
+}
+
+.forget{
+    font-size:16px ;
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 16px;
+    background-color: #7754db;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #db5454;
+    color: #7754db;
+    border-radius: 5px;
+}
